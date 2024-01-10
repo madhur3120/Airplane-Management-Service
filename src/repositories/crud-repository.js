@@ -43,6 +43,9 @@ class CrudRepository {
                 id: id
             }
         });
+        if(response[0]===0){
+            throw new AppError('Failed to update the data', StatusCodes.INTERNAL_SERVER_ERROR);
+        }
         return response;
     }
 }
