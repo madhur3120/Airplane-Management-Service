@@ -12,6 +12,9 @@ router.get('/', AirplaneController.getAirplanes);
 // GET - api/v1/airplanes/:id
 router.get('/:id', AirplaneController.getAirplane);
 
+// PATCH - api/v1/airplanes/:id
+router.patch('/:id', AirplaneController.updateAirplane);
+
 // DELETE - api/v1/airplanes/:id
 router.delete('/:id', AirplaneController.destroyAirplane);
 
